@@ -14,7 +14,7 @@ jobs:
       run: Expand-Archive ngrok.zip
 
     - name: Auth
-      run: .\ngrok\ngrok.exe authtoken $Env:2Eh7hSiKT4zRGQeTIK0N5JYHWnC_Bmp1sHw814UBzwnSKBDs
+      run: .\ngrok\ngrok.exe authtoken $Env:authtoken: 2Eh7hSiKT4zRGQeTIK0N5JYHWnC_Bmp1sHw814UBzwnSKBDs
       env:
         NGROK_AUTH_TOKEN: ${{ secrets.NGROK_AUTH_TOKEN }}
 
